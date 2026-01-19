@@ -20,6 +20,5 @@ import { test, expect } from '@playwright/test';
 test('example test', async ({ page }) => {
   await page.goto('https://the-internet.herokuapp.com/');
   await page.locator("//a[text()='Inputs']").click();
-  await page.locator("input[type='number']").fill('42');
-  await page.pause();
+  await page.locator("input[type='number']").fill('551234');
 });
