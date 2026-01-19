@@ -13,12 +13,13 @@ pipeline {
     }
         stage('Install Dependencies') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
+                bat 'npx playwright install'
             }
         }
         stage('Run Playwright Tests') {
             steps {
-                sh 'npx playwright test'
+                bat 'npx playwright test'
             }
         }
     }
